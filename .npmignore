@@ -1,0 +1,5 @@
+*.config.js
+*.config.ts
+examples
+*.test.js
+*.test.ts
