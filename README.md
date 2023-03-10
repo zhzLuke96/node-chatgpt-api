@@ -3,7 +3,7 @@ ChatGPT API
 
 > fork from https://github.com/transitive-bullshit/chatgpt-api
 
-- just support official API
+- only support official API
 - without conversation management
 - same as usage calculation from OpenAI-official
 - autoscaling messages

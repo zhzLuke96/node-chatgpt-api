@@ -79,5 +79,9 @@
     "gpt",
     "ai",
     "bot"
-  ]
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  }
 }
