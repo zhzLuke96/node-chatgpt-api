@@ -51,7 +51,7 @@ export class ChatGPTAPI {
       maxModelTokens = 4090,
       maxResponseTokens = 1024,
       minResponseTokens = 4,
-      fetch = globalThis.fetch,
+      fetch = globalThis.fetch.bind(globalThis),
       tokenize = gpt3encoder,
       normalizeMessage,
     } = opts;
