@@ -3,7 +3,7 @@ import * as types from "./types";
 import { fetchSSE } from "./fetch/fetch-sse";
 import { NormalizeMessageFunction } from "./types";
 
-import { openai } from "./openai.types";
+import * as openai from "./openai.types";
 
 import { encode as gpt3encoder } from "gpt-3-encoder";
 

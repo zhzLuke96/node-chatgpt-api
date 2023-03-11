@@ -1,4 +1,4 @@
-import { openai } from "./openai.types";
+import * as openai from "./openai.types";
 
 export enum EModelId {
   "turbo" = "gpt-3.5-turbo",
