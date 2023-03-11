@@ -246,7 +246,7 @@ export class ChatGPTAPI {
       content: "",
     };
     return new Promise<ChatGPTCallResult>(async (resolve, reject) => {
-      await fetchSSE(
+      fetchSSE(
         url,
         {
           ...(requestInit || {}),
@@ -279,7 +279,7 @@ export class ChatGPTAPI {
           },
         } as any,
         this._fetch
-      );
+      ).catch(reject);
     });
   }
 
