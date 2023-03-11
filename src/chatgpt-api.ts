@@ -51,7 +51,7 @@ export class ChatGPTAPI {
       maxModelTokens = 4090,
       maxResponseTokens = 1024,
       minResponseTokens = 4,
-      fetch = global.fetch,
+      fetch = globalThis.fetch,
       tokenize = gpt3encoder,
       normalizeMessage,
     } = opts;
@@ -222,7 +222,7 @@ export class ChatGPTAPI {
 
   private async fetchChatCompletionsMocked(
     url: string,
-    requestInit: NonNullable<Parameters<typeof global.fetch>[1]>,
+    requestInit: NonNullable<Parameters<typeof globalThis.fetch>[1]>,
     opt: types.SendMessageOptions
   ): Promise<ChatGPTCallResult> {
     const result: ChatGPTCallResult = {
@@ -237,7 +237,7 @@ export class ChatGPTAPI {
 
   private async fetchChatCompletionsSSE(
     url: string,
-    requestInit: NonNullable<Parameters<typeof global.fetch>[1]>,
+    requestInit: NonNullable<Parameters<typeof globalThis.fetch>[1]>,
     opt: types.SendMessageOptions
   ) {
     const { onProgress } = opt;
@@ -285,7 +285,7 @@ export class ChatGPTAPI {
 
   private async fetchChatCompletions(
     url: string,
-    requestInit: NonNullable<Parameters<typeof global.fetch>[1]>,
+    requestInit: NonNullable<Parameters<typeof globalThis.fetch>[1]>,
     opt: types.SendMessageOptions
   ) {
     const result: ChatGPTCallResult = {

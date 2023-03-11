@@ -13,7 +13,7 @@ export type NormalizeMessageFunction = (
   messages: openai.ChatCompletionRequestMessage[]
 ) => string | Promise<string>;
 
-export type FetchFn = typeof global.fetch;
+export type FetchFn = typeof globalThis.fetch;
 
 export type ChatGPTAPIOptions = {
   apiKey: string;

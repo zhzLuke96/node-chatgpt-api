@@ -1,4 +1,4 @@
-type ReadableStream = Awaited<ReturnType<typeof global.fetch>>["body"];
+type ReadableStream = Awaited<ReturnType<typeof globalThis.fetch>>["body"];
 export async function* streamAsyncIterable(
   stream: NonNullable<ReadableStream>
 ) {

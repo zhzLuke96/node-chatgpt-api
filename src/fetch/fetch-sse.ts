@@ -6,10 +6,10 @@ import * as types from "../types";
 
 export async function fetchSSE(
   url: string,
-  options: Parameters<typeof global.fetch>[1] & {
+  options: Parameters<typeof globalThis.fetch>[1] & {
     onMessage: (data: string) => void;
   },
-  fetch = global.fetch as typeof global.fetch
+  fetch = globalThis.fetch as typeof globalThis.fetch
 ) {
   const { onMessage, ...fetchOptions } = options;
   const res = await fetch(url, fetchOptions);
