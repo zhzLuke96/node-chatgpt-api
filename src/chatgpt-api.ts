@@ -5,7 +5,7 @@ import { NormalizeMessageFunction } from "./types";
 
 import * as openai from "./openai.types";
 
-import { encode as gpt3encoder } from "gpt-3-encoder";
+import { encode as gpt3encoder } from "./tokenizer";
 
 type ChatGPTCallResult = openai.ChatCompletionResponseMessage & {
   _response?: openai.CreateChatCompletionResponse;

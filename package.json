@@ -40,7 +40,7 @@
   "homepage": "https://github.com/zhzLuke96/node-chatgpt-api#readme",
   "dependencies": {
     "eventsource-parser": "^0.1.0",
-    "gpt-3-encoder": "^1.1.4",
+    "gpt3-tokenizer": "^1.1.5",
     "p-timeout": "^6.1.1"
   },
   "devDependencies": {

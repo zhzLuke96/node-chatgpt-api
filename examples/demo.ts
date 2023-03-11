@@ -10,7 +10,7 @@ import { buildAPI } from "./common";
     debug_mock: true,
   });
 
-  const resp = await api.requestCompletions([
+  const resp = await api.createChatCompletions([
     {
       role: "system",
       content: "You are a helpful assistant.",
