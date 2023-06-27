@@ -13,7 +13,9 @@
     "isolatedModules": true,
     "baseUrl": ".",
     "outDir": "build",
-    "noEmit": true
+    "noEmit": true,
+    "declaration": false,
+    "declarationDir": null
   },
   // "exclude": ["node_modules", "dist", "service"],
   "ts-node": {
