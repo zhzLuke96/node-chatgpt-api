@@ -1,6 +1,6 @@
 {
   "name": "@llm-utils/chatgpt-api",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "ChatGPT API",
   "scripts": {
     "build-dts": "rollup -c rollup.dts.config.cjs",
@@ -28,7 +28,7 @@
   "types": "./dist/index.d.ts",
   "exports": {
     "types": "./dist/index.d.ts",
-    "require": "./dist/index.js",
+    "require": "./dist/index.umd.js",
     "default": "./dist/index.modern.mjs"
   },
   "files": [
